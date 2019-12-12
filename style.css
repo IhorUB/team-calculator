@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+.header-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: #344147;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* transfer */
+.dev-technology,
+.dev-seniority,
+.qa-technology,
+.qa-seniority,
+.team-btn-area {
+    display: none;
+    transition: .5s;
+    border-top: 1px solid #BDBDBD;
+}
+.disabled_item{
+    pointer-events: none;
+}
+.calculate-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculate-wrap .build-team h6 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #344147;
+}
+.calculate-wrap .build-team .item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.calculate-wrap .build-team .active-item-team {
+    display: block;
+    transition: 0.5s;
+}
+.calculate-wrap .build-team .item .label_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #576870;
+    border-radius: 5px;
+    width: 210px;
+    height: 100px;
+    margin: 29px 0 29px 29px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #576870;
+}
+.calculate-wrap .build-team .item .label_item  input {
+    /*opacity: 0;*/
+}
+.calculate-wrap .build-team .item .label_item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border: 2px solid #A461C4;
+}
+.calculate-wrap .build-team .item .item-selected {
+    background: #A461C4;
+    color: #FFFFFF;
+}
+
+.calculate-wrap .build-team .team-btn-area .btn-calc {
+    width: 280px;
+    height: 60px;
+    border-radius: 30px;
+    border: 3px solid #7CC4CB;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    outline: none;
+}
+.calculate-wrap .build-team .team-btn-area .btn-calc:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.calculate-wrap .build-team .team-btn-area .add-member {
+    background: #7CC4CB;
+    color: #FFFFFF;
+}
+
+
+/*sidebar team*/
+.calculate-wrap .team-sidebar {
+    padding: 35px 31px 40px 31px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 30px rgba(46, 82, 86, 0.2);
+    border-radius: 20px;
+}
+
+.calculate-wrap .team-sidebar .person-added {
+    border-bottom: 1px solid #BDBDBD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculate-wrap .team-sidebar .person-added .position {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344147;
+    flex: 0 0 50%;
+}
+
+.calculate-wrap .team-sidebar .person-added .position .person-info {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 34px;
+    color: #576870;
+}
+
+.calculate-wrap .team-sidebar .person-added .member-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+    border: 1px solid #BDBDBD;
+    border-radius: 10px;
+}
+
+.calculate-wrap .team-sidebar .person-added .member-count input {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    width: 39px;
+    color: #344147;
+    border: none;
+    text-align: center;
+}
+
+.calculate-wrap .team-sidebar .person-added .member-count button {
+    width: 39px;
+    height: 38px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #344147;
+    background: #fff;
+    border: none;
+}
+
+/*btn get quote*/
+.calculate-wrap .team-sidebar .get-quote {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    width: 280px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #7CC4CB;
+    border-radius: 30px;
+    border: none;
+}
