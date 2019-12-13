@@ -23,7 +23,7 @@
 .qa-technology,
 .qa-seniority,
 .team-btn-area {
-    display: none;
+    /*display: none;*/
     transition: .5s;
     border-top: 1px solid #BDBDBD;
 }

@@ -89,7 +89,7 @@ storageFunction = () => {
                 </div>`
             $(".team-sidebar").append(addPerson);
         }
-        else console.log('starageeeeeee')
+        else console.log('else')
     }
 }
 
