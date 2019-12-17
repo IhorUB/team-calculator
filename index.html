@@ -10,51 +10,30 @@
     <div class="container">
         <h2 class="header-title">Build your team</h2>
         <div class="calculate-wrap">
-            <div class="build-team">
-                <div class="speciality">
+            <div id="build-team" class="build-team">
+                <div class="speciality animation-bl">
                     <h6>Speciality</h6>
                     <div class="item">
-                        <label class="label_item"><input type="radio" name="speciality"class="inner" value="developer">Developer</label>
-                        <label class="label_item"><input type="radio" name="speciality"class="inner" value="qa">QA</label>
-                        <label class="label_item"><input type="radio" name="speciality"class="inner" value="project manager">Project Manager</label>
-                        <label class="label_item"><input type="radio" name="speciality"class="inner" value="designer">Designer</label>
+                        <label class="label_item"><input type="radio" name="speciality" class="inner dev" value="developer">Developer</label>
+                        <label class="label_item qa"><input type="radio" name="speciality" class="inner" value="qa">QA</label>
+                        <label class="label_item"><input type="radio" name="speciality" class="inner" value="pm">Project Manager</label>
+                        <label class="label_item"><input type="radio" name="speciality" class="inner" value="designer">Designer</label>
                     </div>
-                </div>
-                <div class="dev-technology">
-                    <h6>Technology</h6>
-                    <div class="item">
-                        <label class="label_item"><input type="radio" name="technology"class="inner" value="dev-tech">Angular</label>
-                        <label class="label_item"><input type="radio" name="technology"class="inner" value="dev-tech">Laravel</label>
-                        <label class="label_item"><input type="radio" name="technology"class="inner" value="dev-tech">Salesforce</label>
-                        <label class="label_item"><input type="radio" name="technology"class="inner" value="dev-tech">NodeJS</label>
-                        <label class="label_item"><input type="radio" name="technology"class="inner" value="dev-tech">Wordpress</label>
-                    </div>
-                </div>
-                <div class="dev-seniority">
-                    <h6>Seniority</h6>
-                    <div class="item">
-                        <label class="label_item" data-id="6750"><input type="radio" name="seniority"class="inner" value="dev-senior">Senior</label>
-                        <label class="label_item" data-id="5040"><input type="radio" name="seniority"class="inner" value="dev-middle">Middle</label>
-                    </div>
-                </div>
-                <div class="team-btn-area">
-                    <button class="btn-calc get-quote">Get quote</button>
-                    <button class="btn-calc add-member">+ Member</button>
                 </div>
             </div>
             <div class="team-sidebar">
-                <!--<div class="person-added">
-                    <p class="position">Developer<br>
-                        <span class="person-info">Wordpress, Senior</span>
-                    </p>
-                    <div class="member-count">
-                        <button class="btn-minus">-</button>
-                        <input type="number" value="0">
-                        <button class="btn-plus">+</button>
-                    </div>
-                </div> -->
                 <button class="get-quote">Get quote</button>
             </div>
+        </div>
+    </div>
+
+    <div class="modal-team-calc">
+        <div class="modal-wrap">
+            <input type="text" name="name" placeholder="First name*" required>
+            <input type="text" name="surname" placeholder="Last name*" required>
+            <input type="email" name="email" placeholder="E-mail*" required>
+            <input type="tel" name="phone" placeholder="Phone number*" required>
+            <textarea placeholder="Your message"></textarea>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
